@@ -10,8 +10,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // const backendUrl = import.meta.env.example.VITE_BACKEND_URL;
-  const backendUrl = "https://docsync-hackvsit.onrender.com";
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const { setDToken } = useContext(DoctorContext);
   const { setAToken } = useContext(AdminContext);
